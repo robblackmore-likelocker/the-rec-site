@@ -1,36 +1,81 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Rec: Sunday League</title>
-<meta name="description" content="Help with The Rec, the grassroots football game for iPhone: purchases, backups, new phones and how to get in touch.">
-<style>
-  :root { --bg:#0e1611; --card:#16231b; --line:#2e3e32; --fg:#eef3ea; --muted:#b2bfb4; --green:#2f8a4e; --gold:#f0b43a; }
-  * { box-sizing:border-box; }
-  html { -webkit-text-size-adjust:100%; }
-  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  main { max-width:680px; margin:0 auto; padding:28px 16px 48px; }
-  header { display:flex; align-items:center; gap:14px; margin-bottom:22px; }
-  header img { width:64px; height:64px; border-radius:15px; flex:none; }
-  .kicker { color:var(--gold); font-size:13px; font-weight:800; letter-spacing:1.6px; text-transform:uppercase; margin:0; }
-  h1 { font-size:28px; line-height:1.2; margin:2px 0 0; }
-  .contact { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; padding:14px 16px; margin:0 0 26px; }
-  .contact p:last-child { margin-bottom:0; }
-  h2 { color:var(--gold); font-size:19px; margin:28px 0 6px; }
-  p { margin:0 0 12px; }
-  a { color:var(--gold); }
-  .muted { color:var(--muted); font-size:15px; }
-  footer { margin-top:36px; padding-top:16px; border-top:1px solid var(--line); }
-  nav a { margin-right:16px; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Rec: Sunday League</title>
+  <meta name="description" content="A Sunday league football game for iPhone. Your mates are the team, the Rec is the ground, and there are ten leagues between you and the top.">
+  <meta property="og:title" content="The Rec: Sunday League">
+  <meta property="og:description" content="Your mates are the team. Ten leagues between you and the top.">
+  <meta property="og:image" content="https://the-rec-game.com/img/wordmark.jpg">
+  <link rel="icon" href="icon.jpg">
+  <style>
+    :root { --green: #1e5e34; --deep: #0e1611; --card: #16211a; --gold: #f0b43a; --ink: #fbfaf6; --muted: rgba(251,250,246,.72); }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--deep); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 18px 56px; text-align: center; }
+    .wordmark { width: min(520px, 92%); height: auto; border-radius: 18px; }
+    .lede { font-size: 23px; font-weight: 800; margin: 22px auto 8px; max-width: 640px; }
+    .gold { color: var(--gold); }
+    .muted { color: var(--muted); max-width: 640px; margin: 8px auto; }
+    .badge { display: inline-block; margin: 18px 0 4px; padding: 13px 26px; border-radius: 14px; background: var(--gold); color: #17130a; font-weight: 800; text-decoration: none; }
+    .tour { list-style: none; padding: 0; margin: 44px 0 10px; display: grid; gap: 26px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .tour li { background: var(--card); border: 1px solid rgba(240,180,58,.28); border-radius: 22px; padding: 16px 16px 20px; }
+    .tour img { width: 100%; height: auto; border-radius: 16px; display: block; }
+    .tour strong { display: block; color: var(--gold); font-size: 19px; margin: 14px 0 4px; }
+    .tour span { color: var(--muted); font-size: 15.5px; }
+    .facts { max-width: 680px; margin: 40px auto 0; text-align: left; background: var(--green); border-radius: 22px; padding: 22px 24px; }
+    .facts h2 { margin: 0 0 8px; color: var(--gold); font-size: 20px; }
+    .facts ul { margin: 0; padding-left: 20px; }
+    .facts li { margin: 6px 0; }
+    footer { margin-top: 44px; color: var(--muted); font-size: 15px; }
+    footer a { color: var(--ink); margin: 0 10px; }
+  </style>
 </head>
 <body>
-<main>
-  <img src="icon.jpg" alt="The Rec" width="96" height="96" style="border-radius:22px">
-  <h1>The Rec</h1>
-  <p>A Sunday league football game for iPhone. Take on a council pitch, a padlocked changing room and a rope round the grass, and build a club with your real mates.</p>
-  <p><a href="support.html">Help and support</a> &middot; <a href="privacy.html">Privacy policy</a></p>
-  <p class="muted">Questions? Email <a href="mailto:rob@the-rec-game.com">rob@the-rec-game.com</a>.<br>&copy; 2026 BlackmoreApps.</p>
-</main>
-</body></html>
+  <main class="wrap">
+    <img class="wordmark" src="img/wordmark.jpg" width="900" height="450" alt="The Rec">
+    <p class="lede">Your mates are the team. <span class="gold">The Rec is the ground.</span></p>
+    <p class="muted">A Sunday league football game for iPhone. Take over a council pitch with a rope round it and a padlocked changing room, put your real mates in the side, and climb ten leagues towards the top, one muddy Sunday at a time.</p>
+    <p><span class="badge">Coming soon to the App Store</span></p>
+    <p class="muted" style="font-size:15px">For iPhone. Season 1 is free, start to finish, with no adverts.</p>
+
+    <ol class="tour">
+      <li>
+        <img src="img/match.jpg" width="598" height="1300" loading="lazy" alt="The Match tab: the club's position, funds and next fixture.">
+        <strong>Run the club</strong>
+        <span>Pick the team, sort the week, set the ticket prices and keep the chairman happy. Every choice shows what it does.</span>
+      </li>
+      <li>
+        <img src="img/table.jpg" width="598" height="1300" loading="lazy" alt="The league table, with every club's badge.">
+        <strong>Climb the leagues</strong>
+        <span>Champions go up, second to fifth play off, and the cup throws you in with clubs from leagues above and below.</span>
+      </li>
+      <li>
+        <img src="img/club.jpg" width="598" height="1300" loading="lazy" alt="The Club tab: the ground, the funds and the club's people.">
+        <strong>Build something</strong>
+        <span>Grow the ground from a rope round the pitch to a proper stadium, with a whole cast of club people and a ten-season story along the way.</span>
+      </li>
+    </ol>
+
+    <section class="facts">
+      <h2>What's involved</h2>
+      <ul>
+        <li>Live matches you can shout at, with subs, tactics and big calls at the big moments.</li>
+        <li>Your real mates as players, with their own photos if you like.</li>
+        <li>A rival across town who follows you all the way up.</li>
+        <li>The pub quiz, darts and a sticker album to fill.</li>
+        <li>Season 1 free. Then the Full Club, one purchase of £5.99, unlocks every season after it. You can never buy club money.</li>
+        <li>No accounts, no adverts, no tracking. Your club stays on your phone.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <a href="support.html">Help and support</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:rob@the-rec-game.com">rob@the-rec-game.com</a>
+      <p>&copy; 2026 BlackmoreApps. The Rec is a work of fiction.</p>
+    </footer>
+  </main>
+</body>
+</html>
