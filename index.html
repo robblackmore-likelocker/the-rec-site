@@ -17,9 +17,6 @@
     .wrap { max-width: 1000px; margin: 0 auto; padding: 32px 18px 56px; }
     .c { text-align: center; }
     .wordmark { width: min(560px, 94%); height: auto; display: block; margin: 0 auto; }
-    .topbar { display: flex; justify-content: flex-start; margin: -14px 0 4px; }
-    .topbar a { display: block; line-height: 0; opacity: .9; }
-    .topbar img { width: 44px; height: 44px; border-radius: 10px; }
     h1, h2 { font-weight: 900; letter-spacing: .5px; text-transform: uppercase; }
     h2 { color: var(--gold); font-size: 26px; margin: 60px 0 6px; text-align: center; }
     .sub { color: var(--muted); max-width: 660px; margin: 6px auto 0; text-align: center; }
@@ -43,14 +40,13 @@
     footer { margin-top: 50px; color: var(--muted); font-size: 15px; text-align: center; }
     footer a { color: var(--ink); margin: 0 10px; }
     .maker { display: inline-flex; align-items: center; gap: 10px; margin-top: 18px; color: var(--muted); text-decoration: none; }
-    .maker img { width: 56px; height: 56px; border-radius: 12px; }
+    .maker img { width: 72px; height: 72px; mix-blend-mode: lighten; }
     @media (max-width: 640px) { .beat { grid-template-columns: 1fr; } h2 { font-size: 22px; } .lede { font-size: 21px; } }
   </style>
 </head>
 <body>
   <main class="wrap">
     <div class="c">
-      <div class="topbar"><a href="#made-by" title="Made by BlackmoreApps"><img src="img/blackmoreapps-sm.jpg" width="44" height="44" alt="BlackmoreApps"></a></div>
       <img class="wordmark" src="img/wordmark.png" width="900" height="450" alt="The Rec">
       <p class="lede">Your mates are the team. <span class="gold">The Rec is the ground.</span> Doreen is counting on you.</p>
       <p class="sub">A warm, funny football management game for iPhone about taking a Sunday league side from a council pitch all the way to the top.</p>
@@ -107,7 +103,7 @@
       <a href="support.html">Help and support</a>
       <a href="privacy.html">Privacy policy</a>
       <a href="mailto:rob@the-rec-game.com">rob@the-rec-game.com</a>
-      <div><span class="maker" id="made-by"><img src="img/blackmoreapps.jpg" width="56" height="56" alt="BlackmoreApps">Made by BlackmoreApps</span></div>
+      <div><span class="maker" id="made-by"><img src="img/blackmoreapps.jpg" width="72" height="72" alt="BlackmoreApps">Made by BlackmoreApps</span></div>
       <p>&copy; 2026 BlackmoreApps. The Rec is a work of fiction: clubs, players and people in it are made up.</p>
     </footer>
   </main>
