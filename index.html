@@ -62,8 +62,14 @@
     .snow i { position: absolute; top: -12px; border-radius: 50%; background: #fff; opacity: .55; animation: fall linear infinite; }
     @keyframes fall { to { transform: translate3d(var(--drift, 20px), 105vh, 0); } }
     @media (prefers-reduced-motion: reduce) { .snow i { animation: none; display: none; } }
+    .xmas-panel { display: none; }
+    .xmas .xmas-panel { display: grid; grid-template-columns: minmax(0, 210px) 1fr; gap: 22px; align-items: center; max-width: 700px; margin: 50px auto 0; background: var(--card); border: 1px solid rgba(200,16,46,.45); border-radius: 20px; padding: 16px; }
+    .xmas-panel img { width: 100%; height: auto; border-radius: 12px; display: block; }
+    .xmas-panel h3 { color: #ff6b6b; margin: 0 0 8px; font-size: 22px; }
+    .xmas-panel p { margin: 0; color: var(--muted); }
     .wrap { position: relative; z-index: 1; }
     @media (max-width: 640px) { h2 { font-size: 22px; } .lede { font-size: 21px; } .story { gap: 10px; } .beat { padding: 8px; gap: 8px; border-radius: 14px; } .beat h3 { font-size: 15.5px; gap: 6px; } .beat h3 b { width: 22px; height: 22px; font-size: 12px; } .beat p { font-size: 13.5px; line-height: 1.45; } }
+    @media (max-width: 640px) { .xmas .xmas-panel { grid-template-columns: 120px 1fr; gap: 14px; padding: 12px; } .xmas-panel h3 { font-size: 18px; } .xmas-panel p { font-size: 14.5px; } }
     @media (max-width: 340px) { .story { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -127,6 +133,14 @@
       <img src="img/table.jpg" width="598" height="1300" loading="lazy" alt="The league table with every club's badge.">
       <img src="img/club.jpg" width="598" height="1300" loading="lazy" alt="The Club tab: the ground, funds and club people.">
     </div>
+
+    <section class="xmas-panel" aria-label="Christmas at the Rec">
+      <img src="img/xmas-rec.jpg" width="600" height="1297" loading="lazy" alt="The Rec under snow at sunset: a scarf on the fence, a mug on the tea hut and someone heading for the changing rooms with the kit bag.">
+      <div>
+        <h3>Christmas at the Rec</h3>
+        <p>Frost on the pitch, Boxing Day fixtures and the busiest tea hut of the year. Season 1 is free, so there's a whole season to get through before New Year.</p>
+      </div>
+    </section>
 
     <section class="price">
       <h3>Season 1 is free</h3>
