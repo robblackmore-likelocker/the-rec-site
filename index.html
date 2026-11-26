@@ -89,7 +89,9 @@
   <main class="wrap">
     <div class="greeting"><strong>Merry Christmas from the Rec</strong><span>Boxing Day fixtures, mince pies on the tea hut, and a squad that's had far too much turkey.</span></div>
     <div class="c">
-      <img class="wordmark" src="img/wordmark.png" width="900" height="450" alt="The Rec">
+      <img class="wordmark" id="wordmark" src="img/wordmark.png" width="900" height="450" alt="The Rec">
+      <!-- Snow on the letters while the site is in its Christmas dress (20 Nov to 6 Jan), like the app icon. -->
+      <script>if (/\bxmas\b/.test(document.documentElement.className)) document.getElementById('wordmark').src = 'img/wordmark-snow.png';</script>
       <p class="lede">Your mates are the team. <span class="gold">The Rec is the ground.</span> Doreen is counting on you.</p>
       <p class="sub">A warm, funny football management game for iPhone about taking a Sunday league side from a council pitch all the way to the top.</p>
       <p><a class="btn" href="https://apps.apple.com/gb/app/id6825304222">Download on the App Store</a></p>
