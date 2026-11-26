@@ -11,6 +11,11 @@
   <meta property="og:image" content="https://the-rec-game.com/img/wordmark.jpg">
   <link rel="icon" href="icon.jpg">
   <script>
+    // The tab icon matches the app: snowy from 20 November to Christmas Day, the everyday wordmark from Boxing Day.
+    (function () { var d = new Date(), m = d.getMonth(), day = d.getDate();
+      if ((m === 10 && day >= 20) || (m === 11 && day <= 25)) { var l = document.querySelector('link[rel="icon"]'); if (l) l.href = 'icon-christmas.jpg'; } })();
+  </script>
+  <script>
     // Christmas dress: 20 November to 6 January each year, then it packs itself away.
     (function () { var d = new Date(), m = d.getMonth(), day = d.getDate();
       if ((m === 10 && day >= 20) || m === 11 || (m === 0 && day <= 6)) document.documentElement.className += ' xmas'; })();
